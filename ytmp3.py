@@ -4,7 +4,7 @@ import os
   
 yt = YouTube( 
 
-    str(input("Masukan Link Video Yang Ingin Kamu Download: \n>> "))) 
+    str(input("Enter the URL of the YouTube video you want to convert : \n>> "))) 
 
  
 video = yt.streams.filter(abr = '160kbps').last() 
@@ -19,4 +19,4 @@ new_file = base + '.mp3'
 os.rename(out_file, new_file) 
  
  
-print("Download Berhasil", new_file)
+print("Download Was Successful", new_file)
