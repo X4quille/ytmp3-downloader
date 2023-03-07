@@ -7,7 +7,7 @@ yt = YouTube(
     str(input("Masukan Link Video Yang Ingin Kamu Download: \n>> "))) 
 
  
-video = yt.streams.filter(only_audio=True).first() 
+video = yt.streams.filter(abr = '160kbps').last() 
 
 out_file = video.download() 
 
